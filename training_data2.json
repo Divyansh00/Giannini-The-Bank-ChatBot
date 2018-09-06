@@ -1,0 +1,171 @@
+{
+    "rasa_nlu_data": {
+        "common_examples": [{
+            "text": "What is my current balance",
+            "intent": "check_balance",
+            "entities": [{
+                "start": 19,
+                "end": 26,
+                "value": "balance",
+                "entity": "money"
+            }]
+        }, {
+            "text": "What is my balance",
+            "intent": "check_balance",
+            "entities": [{
+                "start": 11,
+                "end": 18,
+                "value": "balance",
+                "entity": "money"
+            }]
+        }, {
+            "text": "Tell me my balance",
+            "intent": "check_balance",
+            "entities": [{
+                "start": 11,
+                "end": 18,
+                "value": "balance",
+                "entity": "money"
+            }]
+        }, {
+            "text": "How much balance do I have",
+            "intent": "check_balance",
+            "entities": [{
+                "start": 9,
+                "end": 16,
+                "value": "balance",
+                "entity": "money"
+            }]
+        }, {
+            "text": "How much money I have",
+            "intent": "check_balance",
+            "entities": [{
+                "start": 9,
+                "end": 14,
+                "value": "balance",
+                "entity": "money"
+            }]
+        }, {
+            "text": "Check balance",
+            "intent": "check_balance",
+            "entities": [{
+                "start": 6,
+                "end": 13,
+                "value": "balance",
+                "entity": "money"
+            }]
+        }, {
+            "text": "Give my last transactions details",
+            "intent": "account_statement",
+            "entities": [{
+                "start": 13,
+                "end": 24,
+                "value": "transaction",
+                "entity": "statement"
+            }]
+        }, {
+            "text": "Give my account statement",
+            "intent": "account_statement",
+            "entities": [{
+                "start": 16,
+                "end": 25,
+                "value": "statement",
+                "entity": "statement"
+            }]
+        }, {
+            "text": "Give me my mini statement",
+            "intent": "account_statement",
+            "entities": [{
+                "start": 11,
+                "end": 25,
+                "value": "transaction detail",
+                "entity": "statement"
+            }]
+        }, {
+            "text": "Generate my mini statement",
+            "intent": "account_statement",
+            "entities": [{
+                "start": 12,
+                "end": 26,
+                "value": "transaction detail",
+                "entity": "statement"
+            }]
+        }, {
+            "text": "Generate my account statement",
+            "intent": "account_statement",
+            "entities": [{
+                "start": 20,
+                "end": 29,
+                "value": "statement",
+                "entity": "statement"
+            }]
+        }, {
+            "text": "Tell me my last transactions details",
+            "intent": "account_statement",
+            "entities": [{
+                "start": 16,
+                "end": 27,
+                "value": "transaction",
+                "entity": "statement"
+            }]
+        }, {
+            "text": "Who are you",
+            "intent": "about_bot",
+            "entities": [{
+                "start": 8,
+                "end": 11,
+                "value": "you",
+                "entity": "about_bot"
+            }]
+        }, {
+            "text": "What is your name",
+            "intent": "about_bot",
+            "entities": [{
+                "start": 13,
+                "end": 17,
+                "value": "name",
+                "entity": "about_bot"
+            }]
+        }, {
+            "text": "What can you do",
+            "intent": "work_bot",
+            "entities": [{
+                "start": 5,
+                "end": 15,
+                "value": "can you do",
+                "entity": "work_bot"
+            }]
+        }, {
+            "text": "hey",
+            "intent": "greet",
+            "entities": [{
+                "start": 0,
+                "end": 3,
+                "value": "hey",
+                "entity": "greet"
+            }]
+        }, {
+            "text": "hi",
+            "intent": "greet",
+            "entities": [{
+                "start": 0,
+                "end": 2,
+                "value": "hey",
+                "entity": "greet"
+            }]
+        }, {
+            "text": "hello",
+            "intent": "greet",
+            "entities": [{
+                "start": 0,
+                "end": 5,
+                "value": "hey",
+                "entity": "greet"
+            }]
+        }],
+        "regex_features": [{
+            "name": "greet",
+            "pattern": "hey[^\\s]*"
+        }]
+    }
+}
